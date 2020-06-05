@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Backgrounds</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS",sans-serif;
+            margin-bottom: 500px;
+
+        }
+        #bg-color{
+            background-color: teal;
+        }
+        #bg-image{
+            width: 500px;
+            box-shadow: 0 0 10px black;
+            padding: 15px;
+            color: white;
+            background-image: url("img/image4.jpeg");
+        }
+        #bg-attachment{
+            height: 300px;
+            box-shadow: 0 0 10px black;
+            background: white url("img/image5.jpeg") no-repeat fixed center;
+           
+        }
+        #bg-repeat{
+            width: 500px;
+            height: 300px;
+            box-shadow: 0 0 10px black;
+            background: lightsalmon url("img/nature.jpg") repeat-x scroll top right;
+        }
+        #bg-position{
+            width: 500px;
+            height: 300px;
+            box-shadow: 0 0 10px black;
+            background: lightsalmon url("img/nature.jpg") no-repeat scroll bottom right;
+        }
+        #bg-size{
+            width: 500px;
+            height: 300px;
+            box-shadow: 0 0 10px black;
+            background-image: url("img/image4.jpeg");
+            background-size: cover;
+        }
+        #linear{
+            width: 500px;
+            height: 300px;
+            box-shadow: 0 0 10px black;
+            background: linear-gradient(90deg,black,white,black) ;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        Background Color
+        Image
+        Attachment
+        Repeat
+        Position
+        Linear-Gradient
+    -->
+    <h2>Background Color</h2>
+    <div id="bg-color">
+        <h2>Iam from Teal color background</h2>
+    </div>
+
+    <!-- bg Image -->
+    <h2>Background Image</h2>
+    <div id="bg-image">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda atque dolorem hic maiores neque quia reiciendis sapiente? Aperiam enim possimus praesentium sunt. Asperiores, aspernatur blanditiis eligendi inventore minus rem. Deleniti enim excepturi facere fuga fugiat iusto labore magni, porro quis sunt. Amet dicta, fuga harum modi molestias omnis rerum.</p>
+    </div>
+
+    <!-- bg attachment -->
+    <h2>Background attachment</h2>
+    <div id="bg-attachment">
+    
+    </div>
+
+    <!-- bg Repeat -->
+    <h2>Background Repeat</h2>
+    <div id="bg-repeat">
+
+    </div>
+
+    <!-- bg Position -->
+    <h2>Background Position</h2>
+    <div id="bg-position">
+
+    </div>
+
+    <!-- Bg Size -->
+    <h2>Background Size</h2>
+    <div id="bg-size">
+
+    </div>
+
+    <!-- Linear Gradient -->
+    <h2>Linear Gradient</h2>
+    <div id="linear">
+
+    </div>
+
+</body>
+</html>

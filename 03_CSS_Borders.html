@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Borders</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+            margin-bottom: 500px;
+        }
+        div{
+            box-shadow: 0 0 10px black;
+            text-align: center;
+            padding: 14px 25px;
+            width: 500px;
+        }
+        #rounded-all{
+            border: 10px solid blueviolet;
+            border-radius: 30px;
+        }
+        #rounded-two{
+            border: 10px solid blueviolet;
+            border-radius: 50px 0 50px 0;
+        }
+        #border-mix{
+            border-top: 10px solid blueviolet;
+            border-right: 10px solid orangered;
+            border-bottom: 10px solid limegreen;
+            border-left: 10px solid teal;
+        }
+        h3{
+            width: 100px;
+            height: 100px;
+            box-shadow: 0 0 10px black;
+            border: 10px solid orangered;
+            border-radius: 50%;
+            background: linear-gradient(45deg,lightsalmon,darkred);
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+      border widths ,styles , colors , sides , rounded , custom
+     -->
+
+    <h2>Border Top</h2>
+    <div style="border-top: 10px solid blueviolet">
+        <h1>Good Morning</h1>
+    </div>
+
+    <h2>Border Right</h2>
+    <div style="border-right: 10px solid blueviolet">
+        <h1>Good Morning</h1>
+    </div>
+
+    <h2>Border Bottom</h2>
+    <div style="border-bottom: 10px solid blueviolet">
+        <h1>Good Morning</h1>
+    </div>
+
+    <h2>Border Left</h2>
+    <div style="border-left: 10px solid blueviolet">
+        <h1>Good Morning</h1>
+    </div>
+
+    <h2>Border All sides</h2>
+    <div style="border: 10px solid blueviolet">
+        <h1>Good Morning</h1>
+    </div>2
+
+    <h2>Border Rounded All sides</h2>
+    <div id="rounded-all">
+        <h1>Good Morning</h1>
+    </div>
+
+    <h2>Border Rounded Two sides</h2>
+    <div id="rounded-two">
+        <h1>Good Morning</h1>
+    </div>
+
+    <h2>Border Mixed</h2>
+    <div id="border-mix">
+        <h1>Good Morning</h1>
+    </div>
+
+    <h2>Circle</h2>
+    <h3></h3>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Mixed Selectors</title>
+    <style>
+       ol{
+            background-color: lightgreen;
+        }
+
+       ol li{
+           color: white;
+           margin: 5px;
+           font-family: "Comic Sans MS",sans-serif;
+       }
+
+        ol li:nth-child(1){
+            background-color: lightblue;
+        }
+
+       ol li:nth-child(2){
+           background-color: orangered;
+       }
+
+       ol li:nth-child(3){
+           background-color: purple;
+       }
+
+       ol li:nth-child(4){
+           background-color: green;
+       }
+    </style>
+</head>
+<body>
+
+
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Bootstrap</li>
+    </ol>
+
+
+</body>
+</html>
