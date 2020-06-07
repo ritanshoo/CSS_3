@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Landing Page</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .main-nav{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 0 10px black;
+        }
+        .main-nav h2{
+            margin: 0;
+        }
+        .nav-items{
+            display: flex;
+            align-items: center;
+        }
+        .nav-items a{
+            color: white;
+            text-decoration: none;
+            padding: 10px 25px;
+        }
+        .nav-items a:hover{
+            background-color: orange;
+            color: black;
+            border-radius: 5px;
+        }
+        .text-primary{
+            color: orange;
+        }
+        /* -------------- Full Screen landing page -------------- */
+        .main-content{
+            background: white url("img/group.jpg") no-repeat scroll center;
+            height: 100vh;
+            color: white;
+        }
+        .main-content-wrapper{
+            background-color: rgba(0,0,0,0.7);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        .main-content h1{
+            margin: 0;
+            font-size: 60px;
+        }
+        .main-content p{
+            font-size: 20px;
+        }
+        .btn-primary{
+            background-color: orange;
+            font-size: 20px;
+            padding: 14px 25px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+        .btn-primary:hover{
+            box-shadow: 0 0 15px white;
+            cursor: pointer;
+        }
+        @media (max-width: 700px) {
+            .main-nav{
+                flex-direction: column;
+            }
+            .nav-items{
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="main-nav">
+        <h2>UiBrains <span class="text-primary">Technologies</span></h2>
+        <div class="nav-items">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Careers</a>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="main-content-wrapper">
+            <h1>Welcome to <span class="text-primary">Ui Technologies</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error libero perspiciatis quam. A fugit mollitia porro provident quas quasi quisquam. A ab aliquam dolor doloribus ducimus incidunt voluptate? Amet atque, beatae consequuntur delectus facere incidunt, minus nemo officia perferendis porro quis quisquam quod soluta? Earum perferendis quos vel? Omnis, tempora!</p>
+            <button class="btn-primary">Learn More</button>
+        </div>
+    </div>
+
+</body>
+</html>

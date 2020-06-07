@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS forms</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome-5.8.1.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        .login-div{
+            box-shadow: 0 0 10px black;
+            width: 300px;
+            padding: 20px;
+            border-radius: 5px;
+            background: linear-gradient(135deg,darkred,darkslategrey);
+            color: white;
+            margin-top: 100px;
+        }
+        .login-div h2{
+            text-align: center;
+        }
+        .form-group label{
+            display: block;
+            padding: 10px 0;
+            font-size: 18px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="password"],
+        .form-group input[type="email"],
+        .form-group select{
+            font-size: 18px;
+            height: 35px;
+            width: 280px;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid lightsalmon;
+            color: white;
+            margin: 12px 0;
+            background: transparent;
+        }
+        .form-group select{
+            color: #facfbe;
+        }
+        .form-group select option{
+            color: black;
+            background: linear-gradient(135deg,darkred,darkslategrey) !important;
+        }
+        .form-group input[type="text"]:focus,
+        .form-group input[type="password"]:focus,
+        .form-group input[type="email"]:focus,
+        .form-group select:focus{
+            border-bottom: 2px solid #facfbe;
+        }
+        ::placeholder{
+            color: #facfbe;
+        }
+        .submit-btn{
+            margin: 12px 0;
+            background: linear-gradient(45deg,darkred,black);
+            color: white;
+            font-size: 20px;
+            padding: 12px 25px;
+            width: 280px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+        .submit-btn:hover{
+            cursor: pointer;
+            box-shadow: 0 0 10px black;
+        }
+        .icon-div{
+            text-align: center;
+        }
+        .icon-div .fa{
+            font-size: 100px;
+            border: 10px solid darkred;
+            border-radius: 50%;
+            box-shadow: 0 0 5px black;
+            margin-top: -80px;
+            background-color:darkred;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Login Form -->
+    <div class="login-div">
+        <div class="icon-div">
+            <i class="fa fa-user-circle"></i>
+        </div>
+        <h2>Login Here</h2>
+        <form class="login-form">
+            <div class="form-group">
+                <input type="text" placeholder="User Name">
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Mobile Number">
+            </div>
+            <div class="form-group">
+                <select>
+                    <option>Select Designation</option>
+                    <option>Software Engineer</option>
+                    <option>Sr.Software Engineer</option>
+                    <option>Tech Lead</option>
+                    <option>Project Manager</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" class="submit-btn">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
