@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Media Queries</title>
+    <style>
+        h1{
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        h2{
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            display: none;
+        }
+        img{
+            width: 100%;
+            display: block;
+            margin: auto;
+        }
+        div p{
+            color: white;
+        }
+        /* --------- Mobile Screen --------- */
+        @media (max-width: 550px) {
+            body{
+                background: linear-gradient(45deg,black,limegreen);
+            }
+            div h2:nth-child(4){
+                display: block;
+            }
+            div p{
+                font-size: 20px;
+                font-family: Arial, sans-serif;
+            }
+        }
+        /* --------- Tablet Screen --------- */
+        @media (min-width: 551px) and (max-width: 800px) {
+            body{
+                background: linear-gradient(45deg,black,orangered);
+            }
+            div h2:nth-child(3){
+                display: block;
+            }
+            div p{
+                font-size: 30px;
+                font-family: "Comic Sans MS",sans-serif;
+            }
+        }
+        /* --------- Laptop Screen --------- */
+        @media (min-width: 801px) and (max-width: 1200px) {
+            body{
+                background: linear-gradient(45deg,black,blueviolet);
+            }
+            div h2:nth-child(2){
+                display: block;
+            }
+            div p{
+                font-size: 40px;
+                font-family: Consolas,sans-serif;
+            }
+        }
+        /* --------- X-Large Screen --------- */
+        @media (min-width: 1201px){
+            body{
+                background: linear-gradient(45deg,black,yellow);
+            }
+            div h2:nth-child(1){
+                display: block;
+            }
+            div p{
+                font-size: 50px;
+                font-family: "Old English Text MT",sans-serif;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Scree Size : <span id="screen"></span></h1>
+
+    <div>
+        <h2>X-Large Screen</h2>
+        <h2>Laptop Screen</h2>
+        <h2>Tablet Screen</h2>
+        <h2>Mobile Screen</h2>
+    </div>
+    
+    <div>
+        <img src="img/image5.jpeg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab odio odit quo! Adipisci aliquid amet dignissimos dolorum eaque eos exercitationem id laboriosam libero, magnam, modi, mollitia possimus repellendus unde veritatis? Aliquam corporis dicta et iste molestiae nemo odit quae, rerum. Accusantium corporis, dolores eum magnam placeat quasi ratione tempora veniam.</p>
+    </div>
+
+
+<script>
+    window.addEventListener('resize',function () {
+       let screenSize = window.innerWidth;
+       document.querySelector('#screen').innerText = `${screenSize} px`;
+    });
+</script>
+</body>
+</html>

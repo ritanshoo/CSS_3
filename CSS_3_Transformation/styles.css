@@ -1,0 +1,96 @@
+body{
+    font-family: Arial, sans-serif;
+}
+section{
+    background-color: lightgrey;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+}
+section article{
+    background: linear-gradient(45deg,black,darkblue);
+    color: white;
+    padding: 15px;
+    margin: 10px;
+    width: 250px;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+    transition: all 0.5s;
+}
+
+/* ------------------- Transformation 1 --------------- */
+.trans-1:hover{
+    background: linear-gradient(45deg,black,orangered);
+    transform: translateY(-20px);
+}
+
+/* ------------------- Transformation 2 --------------- */
+.trans-2:hover{
+    background: linear-gradient(45deg,black,orangered);
+    transform: skewY(10deg);
+}
+
+/* ------------------- Transformation 3 --------------- */
+.trans-3:hover{
+    background: linear-gradient(45deg,black,orangered);
+    transform: scale(1.2,1.2);
+}
+
+/* ------------------- Transformation 4 --------------- */
+.trans-4:hover{
+    background: linear-gradient(45deg,black,orangered);
+    transform: rotate(-10deg) scale(1.2,1.2);
+}
+
+/* ------------------- Transformation 5 --------------- */
+.trans-5:hover{
+    background: linear-gradient(45deg,black,orangered);
+    transform: perspective(400px) rotateY(25deg);
+}
+
+/* ------------------- Transformation 6 --------------- */
+.trans-6:hover{
+    background: linear-gradient(45deg,black,orangered);
+    transform: rotate3d(1,1,1,45deg);
+}
+
+/* --------------------- zoom Effect --------------------- */
+.figure{
+    width: 600px;
+    height: 350px;
+    margin: auto;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.figure img{
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+    transition: all 0.3s linear 0s;
+}
+.figure:hover img{
+    transform: scale(1.2,1.2);
+}
+.figure .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    transform: perspective(400px) rotateY(90deg);
+    transform-origin: left;
+    transition: all 0.3s linear 0s;
+}
+.figure .content p{
+    font-size: 18px;
+}
+.figure:hover .content{
+    transform: perspective(400px) rotateY(0deg);
+}

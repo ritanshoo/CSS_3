@@ -1,0 +1,62 @@
+body{
+    background-color: black;
+}
+div{
+    margin: 200px;
+}
+span{
+    font-family: "Comic Sans MS",sans-serif;
+    font-size: 30px;
+    padding: 14px 25px;
+    margin: 10px;
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+    animation: move 1s infinite alternate;
+}
+@keyframes move {
+    0%, 100%{
+        transform: translateY(-50px);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+}
+span:nth-child(1){
+    animation-delay: 0.1s;
+    background: linear-gradient(45deg,black,red);
+    box-shadow: 0 10px 15px red;
+}
+span:nth-child(2){
+    animation-delay: 0.2s;
+    background: linear-gradient(45deg,black,blueviolet);
+    box-shadow: 0 10px 15px blueviolet;
+}
+span:nth-child(3){
+    animation-delay: 0.3s;
+    background: linear-gradient(45deg,black,limegreen);
+    box-shadow: 0 10px 15px limegreen;
+}
+
+span:nth-child(4){
+    animation-delay: 0.4s;
+    background: linear-gradient(45deg,black,teal);
+    box-shadow: 0 10px 15px teal;
+}
+span:nth-child(5){
+    animation-delay: 0.5s;
+    background: linear-gradient(45deg,black,yellow);
+    box-shadow: 0 10px 15px yellow;
+}
+span:nth-child(6){
+    animation-delay: 0.6s;
+    background: linear-gradient(45deg,black,orangered);
+    box-shadow: 0 10px 15px orangered;
+}
+span:nth-child(7){
+    animation-delay: 0.7s;
+    background: linear-gradient(45deg,black,deepskyblue);
+    box-shadow: 0 10px 15px deepskyblue;
+}
+
+

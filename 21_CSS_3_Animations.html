@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 Animation</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS",sans-serif;
+        }
+
+        .simple{
+            width: 100px;
+            height: 100px;
+            background-color: limegreen;
+            box-shadow: 0 0 10px black;
+            border-radius: 50%;
+            border: 20px solid green;
+            animation: simple 2s infinite linear;
+        }
+        @keyframes simple {
+            0%,50%,100%{
+                background-color: limegreen;
+                border-color: green;
+            }
+            25%,75%{
+                background-color: green;
+                border-color: limegreen;
+            }
+        }
+
+        .spin{
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(45deg,lightblue,darkslateblue);
+            border-top: 40px solid darkblue;
+            border-bottom: 40px solid darkblue;
+            border-left: 20px solid darkblue;
+            border-right: 20px solid darkblue;
+            border-radius: 50%;
+            box-shadow: 0 0 10px black;
+            animation: spin 2s infinite linear;
+        }
+        @keyframes spin {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+        .news{
+            background-color: lightsalmon;
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+            width: 80%;
+            margin: auto;
+            border: 20px solid coral;
+            box-shadow: 0 0 10px black;
+            overflow: hidden;
+        }
+        .news p{
+            margin: 0;
+            animation: news 10s infinite linear;
+        }
+        @keyframes news {
+            0%{
+                transform: translateX(100%);
+            }
+            100%{
+                transform: translateX(-100%);
+            }
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 200px;
+            background:linear-gradient(45deg,black,red);
+            box-shadow: 0 0 10px black;
+            position: relative;
+            animation: move 4s infinite linear;
+        }
+        @keyframes move {
+            0%{
+                top: 0;
+                left: 0;
+                border-radius: 0%;
+            }
+            25%{
+                top: 0;
+                left: 200px;
+                border-radius: 50% 0 0 0;
+            }
+            50%{
+                top: 200px;
+                left: 200px;
+                border-radius: 50% 50% 0 0;
+            }
+            75%{
+                top: 200px;
+                left: 0;
+                border-radius: 50% 50% 50% 0;
+            }
+            100%{
+                top: 0;
+                left: 0;
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Simple Animation</h3>
+    <div class="simple"></div>
+
+    <hr>
+
+    <h3>Spin Animation</h3>
+    <div class="spin"></div>
+
+    <hr>
+
+    <h3>News Animation</h3>
+    <div class="news">
+        <p>Latest News: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, voluptatibus?</p>
+    </div>
+
+    <hr>
+
+    <!-- Box Animation -->
+    <h3>Box Animation</h3>
+    <div class="box"></div>
+
+    <hr>
+
+    <!-- Foot Ball Animation -->
+    <h3>Foot Ball Animation</h3>
+    <div class="football"></div>
+    <hr>
+
+</body>
+</html>
